@@ -1,0 +1,83 @@
+<div id="drawingContainer">
+  <div id="title">
+    <h4>Line Generator</h4>
+    <span>generate tapering Lines</span>
+  </div>
+  <svg id="svgLines"></svg>
+  <canvas id="canvas">Your browser doesn't support canvas</canvas>
+</div>
+<div id="controls">
+  <button id="start" onclick="runApp()"><i class="fas fa-redo"></i></button>
+  <button id="settings"><i class="fas fa-cogs"></i></button>
+</div>
+<div id="settingsContainer">
+  <ul>
+    <li>
+      <span>both directions</span>
+      <div class="onoffswitch">
+        <input type="checkbox" name="bothDirection" class="onoffswitch-checkbox" id="bothDir">
+        <label class="onoffswitch-label" for="bothDir"></label>
+      </div>
+    </li>
+    <li>
+      <span>colored lines</span>
+      <div class="onoffswitch">
+        <input type="checkbox" name="coloredLines" class="onoffswitch-checkbox" id="coloredLines" checked>
+        <label class="onoffswitch-label" for="coloredLines"></label>
+      </div>
+    </li>
+    <li>
+      <span>highlight first line</span>
+      <div class="onoffswitch">
+        <input type="checkbox" name="firstLine" class="onoffswitch-checkbox" id="firstLine" checked>
+        <label class="onoffswitch-label" for="firstLine"></label>
+      </div>
+    </li>
+    <li>
+      <span>space</span>
+      <input type="text" name="gap" id="gap">
+    </li>
+    <li>
+      <span>lines</span>
+      <input type="text" name="lines" id="lines">
+    </li>
+    <li><span>- or -</span></li>
+    <li>
+        <span>create lines until they're smooth</span>
+        <div class="onoffswitch">
+          <input type="checkbox" name="smoothLines" class="onoffswitch-checkbox" id="smoothLines">
+          <label class="onoffswitch-label" for="smoothLines"></label>
+        </div>
+      </li>
+    <li>
+      <span>line width</span>
+      <input type="text" name="linew" id="linew">
+    </li>
+    <li>
+      <span>stroke width</span>
+      <input type="text" name="strokew" id="strokew">
+    </li>
+    <li>
+      <span>image width</span>
+      <input type="text" name="imagew" id="imagew">
+    </li>
+    <li>
+      <span>image height</span>
+      <input type="text" name="imageh" id="imageh">
+    </li>
+    <li>
+        <span>create downloadable png</span>
+        <div class="onoffswitch">
+          <input type="checkbox" name="savePng" class="onoffswitch-checkbox" id="savePng">
+          <label class="onoffswitch-label" for="savePng"></label>
+        </div>
+      </li>
+  </ul>
+</div>
+
+<link rel="stylesheet" href="style.css">
+<script defer src="./js/all.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="./js/lodash.min.js"></script> -->
+<script src="./js/lines.js"></script>
+<script src="script.js"></script>
